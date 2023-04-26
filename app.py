@@ -65,10 +65,8 @@ def bot(history):
         streamer=streamer,
         max_new_tokens=max_new_tokens,
         do_sample=True,
-        top_p=0.95,
-        top_k=1000,
         temperature=1.0,
-        num_beams=1,
+        top_p=0.9999,
     )
 
     # print(f"Generating with kwargs: {generate_kwargs}")
