@@ -13,16 +13,14 @@ tokenizer = AutoTokenizer.from_pretrained(
     use_auth_token=auth_token if auth_token else True,
 )
 model = AutoModelForCausalLM.from_pretrained(
-    "CarperAI/vicuna-13b-fine-tuned-rlhf-fp16",
-    torch_dtype=torch.float16,
-    device_map="auto",
-    offload_folder="./offload",
-    low_cpu_mem_usage=True,  # Not required for demo but leave for now
+    "CarperAI/vicuna-13b-fine-tuned-rlhf-8bit",
     use_auth_token=auth_token if auth_token else True,
 )
 model.cuda()
+
+
 max_context_length = model.config.max_position_embeddings
-max_new_tokens = 500
+max_new_tokens = 512
 
 
 prompt_template = Template("""\

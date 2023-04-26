@@ -1,3 +1,4 @@
 accelerate
 torch
+bitsandbytes
 transformers>=4.28.0,<4.29.0
