@@ -134,5 +134,5 @@ with gr.Blocks() as demo:
     stop.click(fn=None, inputs=None, outputs=None, cancels=[submit_event, submit_click_event], queue=False)
     clear.click(lambda: None, None, [chatbot], queue=True)
 
-demo.queue(max_size=32, concurrency_count=2)
+demo.queue(max_size=32)
 demo.launch()
