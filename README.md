@@ -1,6 +1,6 @@
 ---
-title: Chat Rlhf
-emoji: 📉
+title: StableVicuna
+emoji: 🦙
 colorFrom: blue
 colorTo: indigo
 sdk: gradio
