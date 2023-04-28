@@ -9,11 +9,11 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, TextIteratorStream
 
 auth_token = os.environ.get("HUGGINGFACE_TOKEN")
 tokenizer = AutoTokenizer.from_pretrained(
-    "CarperAI/vicuna-13b-fine-tuned-rlhf",
+    "CarperAI/stable-vicuna-13b-fp16",
     use_auth_token=auth_token if auth_token else True,
 )
 model = AutoModelForCausalLM.from_pretrained(
-    "CarperAI/vicuna-13b-fine-tuned-rlhf",
+    "CarperAI/stable-vicuna-13b-fp16",
     use_auth_token=auth_token if auth_token else True,
 ).to("cuda")
 
