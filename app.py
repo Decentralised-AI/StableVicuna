@@ -107,7 +107,7 @@ def user(user_message, history):
 
 
 with gr.Blocks() as demo:
-    gr.Markdown("#StableVicuna by CarperAI")
+    gr.Markdown("# StableVicuna by CarperAI")
     gr.HTML("<a href='https://huggingface.co/CarperAI/stable-vicuna-13b-delta'><code>CarperAI/stable-vicuna-13b-delta</a>")
     gr.HTML('''<center><a href="https://huggingface.co/spaces/CarperAI/StableVicuna?duplicate=true"><img src="https://bit.ly/3gLdBN6" alt="Duplicate Space"></a>Duplicate the Space to skip the queue and run in a private space</center>''')
 
