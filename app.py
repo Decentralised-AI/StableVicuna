@@ -33,7 +33,7 @@ prompt_template = Template("""\
 """)
 
 
-system_prompt = "### Assistant: I am StableVicuna, a large language model created by Stability AI. I am here to chat!"
+system_prompt = "### Assistant: I am StableVicuna, a large language model created by CarperAI and StabilityAI. I am here to chat!"
 system_prompt_tokens = tokenizer([f"{system_prompt}\n\n"], return_tensors="pt")
 max_sys_tokens = system_prompt_tokens['input_ids'].size(-1)
 
