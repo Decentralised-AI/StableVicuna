@@ -107,9 +107,9 @@ def user(user_message, history):
 
 
 with gr.Blocks() as demo:
-    gr.Markdown("StableVicuna by Stability AI")
-    gr.HTML("<a href='https://huggingface.co/stabilityai/stable-vicuna-13b-delta'><code>stabilityai/stable-vicuna-13b-delta</a>")
-    gr.HTML('''<center><a href="https://huggingface.co/spaces/stabilityai/stable-vicuna?duplicate=true"><img src="https://bit.ly/3gLdBN6" alt="Duplicate Space"></a>Duplicate the Space to skip the queue and run in a private space</center>''')
+    gr.Markdown("#StableVicuna by CarperAI & Stability AI")
+    gr.HTML("<a href='https://huggingface.co/CarperAI/stable-vicuna-13b-delta'><code>CarperAI/stable-vicuna-13b-delta</a>")
+    gr.HTML('''<center><a href="https://huggingface.co/spaces/CarperAI/StableVicuna?duplicate=true"><img src="https://bit.ly/3gLdBN6" alt="Duplicate Space"></a>Duplicate the Space to skip the queue and run in a private space</center>''')
 
     chatbot = gr.Chatbot([], elem_id="chatbot").style(height=500)
     state = gr.State([])
