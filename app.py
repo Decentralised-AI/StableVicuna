@@ -10,11 +10,11 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, BatchEncoding, Tex
 
 auth_token = os.environ.get("HUGGINGFACE_TOKEN")
 tokenizer = AutoTokenizer.from_pretrained(
-    "CarperAI/stable-vicuna-13b-fp16",
+    "stabilityai/stable-vicuna-13b-fp16",
     use_auth_token=auth_token if auth_token else True,
 )
 model = AutoModelForCausalLM.from_pretrained(
-    "CarperAI/stable-vicuna-13b-fp16",
+    "stabilityai/stable-vicuna-13b-fp16",
     torch_dtype=torch.float16,
     low_cpu_mem_usage=True,
     device_map="auto",
