@@ -13,9 +13,9 @@ tokenizer = AutoTokenizer.from_pretrained(
     use_auth_token=auth_token if auth_token else True,
 )
 model = AutoModelForCausalLM.from_pretrained(
-    "CarperAI/vicuna-13b-fine-tuned-rlhf-8bit",
+    "CarperAI/vicuna-13b-fine-tuned-rlhf",
     use_auth_token=auth_token if auth_token else True,
-)
+).to("cuda")
 
 
 max_context_length = model.config.max_position_embeddings
